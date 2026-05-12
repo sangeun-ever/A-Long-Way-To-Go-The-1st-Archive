@@ -192,3 +192,44 @@ body, html {
     position: static;    /* 부모인 .initial-link의 정렬을 따름 */
     transform: none;     /* 부모가 이미 transform 중이므로 초기화 */
 }
+
+/* 너비를 1024px로 넉넉하게 잡아 PC 창을 줄였을 때와 모바일을 모두 포함합니다 */
+@media screen and (max-width: 1024px) {
+
+    /* 1. 배경 레이어 설정 확인 */
+    .decoration-layer {
+        position: fixed !important; 
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    /* 2. deco1 위치 강제 조정 (좌측 상단) */
+    .deco1 {
+        top: 20px !important;
+        left: 20px !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 60px !important;
+        transform: none !important;
+    }
+
+    /* 3. deco2 위치 강제 조정 (우측 상단) */
+    .deco2 {
+        top: 20px !important;
+        right: 20px !important;
+        left: auto !important;
+        bottom: auto !important;
+        width: 60px !important;
+        transform: none !important;
+    }
+
+    /* 4. deco3 (큰 배경 장식) 위치 조정 */
+    .deco3 {
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 80% !important;
+        height: auto !important;
+        opacity: 0.3 !important; /* 모바일에선 너무 진하면 방해되므로 흐리게 */
+    }
+}
