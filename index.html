@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>멀리 가는 길: The First Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. 배경 장식용 레이어 (맨 뒷배경, 화면 전체 기준) -->
+    <div class="decoration-layer">
+        <img src="images/deco-1.png" class="deco1">
+        <img src="images/deco-1.png" class="deco2">
+        <img src="images/deco-2.png" class="deco3">
+        <!-- deco4와 deco5는 여기서 지웠습니다 -->
+    </div>
+
+    <div class="container">
+        <!-- 왼쪽: 숫자들이 담긴 바구니 -->
+        <div class="left-panel">
+            <div class="number-grid" id="numberGrid"></div>
+        </div>
+
+        <!-- 오른쪽: 사진과 중앙 장식들이 모이는 공간 -->
+        <div class="right-panel">
+            <!-- ★ 추가: 중앙에 고정될 장식들 (id 추가) -->
+            <img src="images/deco-3.png" class="deco4" id="deco4">
+            <img src="images/deco-4.png" class="deco5" id="deco5">
+            <a href="https://youtu.be/kFmMdkVnhKc?si=zVan8Qrt89veocOX" target="_blank" class="initial-link" id="decoLink">
+              <img src="images/cover.jpg" alt="링크이미지">
+            </a>
+            <!-- 실제 사진들이 쌓일 공간 -->
+            <div id="photoContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
