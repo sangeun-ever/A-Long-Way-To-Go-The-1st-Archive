@@ -279,3 +279,35 @@ body, html {
         height: 210px !important;
     }
 }
+/* 5. 오른쪽 패널 위치 및 너비 재조정 */
+    .right-panel {
+        margin-left: 110px !important; /* 왼쪽 패널 너비만큼만 비우기 */
+        width: calc(100% - 110px) !important; /* 전체에서 왼쪽 패널 뺀 나머지 꽉 채우기 */
+        height: 100vh !important;
+        position: relative !important;
+        overflow: hidden !important; /* 패널 밖으로 나가는 사진은 가리기 */
+    }
+
+    /* 6. 패널 안의 사진들 크기 강제 제한 */
+    #photoContainer img {
+        /* 패널 너비의 90%를 넘지 않게 해서 화면 안으로 가두기 */
+        max-width: 85% !important; 
+        max-height: 85% !important;
+        
+        /* 중앙 정렬 유지 */
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        
+        object-fit: contain; /* 이미지 비율 유지하며 박스 안에 맞춤 */
+    }
+
+    /* 7. 중앙 장식(deco4, 5) 및 링크 이미지 크기 조정 */
+    .deco4, .deco5 {
+        width: 200px !important; /* 화면이 작으니 장식도 조금 작게 */
+    }
+
+    .initial-link img {
+        width: 100px !important; /* 커버 이미지 크기도 조정 */
+    }
