@@ -197,7 +197,7 @@ body, html {
 @media screen and (max-width: 1024px) {
 
     .left-panel {
-    width: 100px;           /* 박스 너비 (원하시는 대로 조절) */
+    width: 110px;           /* 박스 너비 (원하시는 대로 조절) */
     height: 100vh;          /* 화면 전체 높이 사용 */
     
     display: flex;          /* 유연한 배치를 위해 사용 */
@@ -230,18 +230,18 @@ body, html {
     text-decoration: underline;
     
     /* 2. 밑줄의 굵기 조절 (원하는 대로 숫자를 바꿔보세요) */
-    text-decoration-thickness: 1px; 
+    text-decoration-thickness: 1.3px; 
     
     /* 3. 글자와 밑줄 사이의 간격 조절 (숫자가 클수록 멀어집니다) */
-    text-underline-offset: 2px; 
+    text-underline-offset: 3px; 
     
     cursor: pointer;
-    font-size: 5px;
+    font-size: 7px;
 }
 
 .number-grid a {
     font-weight: bold; /* 숫자들만 한 단계 더 두껍게 */
-    -webkit-text-stroke: 0.7px; /* 아주 미세하게 외곽선을 그려서 더 선명하게 만들기 (꿀팁!) */
+    -webkit-text-stroke: 1px; /* 아주 미세하게 외곽선을 그려서 더 선명하게 만들기 (꿀팁!) */
 }
 
     /* 1. 배경 레이어 설정 확인 */
@@ -253,7 +253,7 @@ body, html {
 
     /* 2. deco1 위치 강제 조정 (좌측 상단) */
     .deco1 {
-        top: 50px !important;
+        top: 70px !important;
         left: 25px !important;
         right: auto !important;
         bottom: auto !important;
@@ -273,9 +273,9 @@ body, html {
 
     /* 4. deco3 (큰 배경 장식) 위치 조정 */
     .deco3 {
-        top: 70px !important;
+        top: 100px !important;
         left: 0px !important;
-        width: 180px !important;
-        height: auto !important;
+        width: 140px !important;
+        height: 210px !important;
     }
 }
