@@ -106,8 +106,8 @@ body, html {
 
 /* 숫자 눌렀을 때 나오는 실제 사진들 (장식보다 앞에 위치) */
 #photoContainer img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 70%;
+    max-height: 70%;
     z-index: 10;
     position: absolute;
     left: 50%;
@@ -217,7 +217,7 @@ body, html {
     position: fixed;        /* [선택] 스크롤해도 왼쪽 메뉴는 고정하고 싶다면 추가 */
     left: 0;
     top: 0;
-}
+    }
 
     /* 숫자 그리드 (실제 숫자들이 배치되는 공간) */
     .number-grid {
@@ -226,7 +226,7 @@ body, html {
     gap: 15px 8px;      /* 숫자 간격 조절 */
     text-align: center;
     max-width: 300px;       /* 너무 퍼지지 않게 최대 너비 제한 (조절 가능) */
-}
+    }
 
     .number-grid a {
     color: blue;
@@ -241,12 +241,12 @@ body, html {
     
     cursor: pointer;
     font-size: 7px;
-}
+    }
 
     .number-grid a {
     font-weight: bold; /* 숫자들만 한 단계 더 두껍게 */
     -webkit-text-stroke: 1px; /* 아주 미세하게 외곽선을 그려서 더 선명하게 만들기 (꿀팁!) */
-}
+    }
 
     /* 1. 배경 레이어 설정 확인 */
     .decoration-layer {
@@ -282,7 +282,7 @@ body, html {
         width: 140px !important;
         height: 210px !important;
     }
-/* 5. 오른쪽 패널 위치 및 너비 재조정 */
+    /* 5. 오른쪽 패널 위치 및 너비 재조정 */
     .right-panel {
         margin-left: 110px !important; /* 왼쪽 패널 너비만큼만 비우기 */
         width: calc(100% - 110px) !important; /* 전체에서 왼쪽 패널 뺀 나머지 꽉 채우기 */
